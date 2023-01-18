@@ -36,5 +36,4 @@ public class MemberUpdateController extends HttpServlet {
 			throw new ServletException("not update");
 		}
 	}
-
 }

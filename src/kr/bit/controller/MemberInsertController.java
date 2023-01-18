@@ -46,7 +46,6 @@ public class MemberInsertController extends HttpServlet {
 		// Model과 연동부분
 		MemberDAO dao = new MemberDAO();
 		int cnt = dao.memberInsert(vo);
-		PrintWriter out = response.getWriter();
 		if (cnt > 0) {
 			// 가입성공
 			response.sendRedirect("/MVC03/memberList.do");
